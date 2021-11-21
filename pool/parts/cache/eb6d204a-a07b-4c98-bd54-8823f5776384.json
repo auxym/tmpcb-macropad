@@ -1,0 +1,77 @@
+{
+    "MPN": [
+        false,
+        "FTSH-105-01-F-D"
+    ],
+    "datasheet": [
+        false,
+        "http://suddendocs.samtec.com/prints/ftsh-dth.pdf"
+    ],
+    "description": [
+        false,
+        "Pin header 10 x 1.27 mm double row vertical"
+    ],
+    "entity": "504f4bfc-0750-4221-89bb-1160fc2e6ee7",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Samtec"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "67c7c08b-15ca-463b-b875-a467b9473b54",
+    "pad_map": {
+        "0bd6ad61-7224-4ac3-aba9-a0626f85ba53": {
+            "gate": "d0030b61-eea7-40e5-bb04-e8914c4f57d4",
+            "pin": "d1f34c2f-6541-401e-b843-81befc8d8f93"
+        },
+        "0f85fc06-d04b-44fa-8606-0aa517d7cd89": {
+            "gate": "d0030b61-eea7-40e5-bb04-e8914c4f57d4",
+            "pin": "f776e830-d17f-422f-adac-e6e5ebaee545"
+        },
+        "1b90d5bf-98ff-46b3-924f-ecc15d48e73f": {
+            "gate": "d0030b61-eea7-40e5-bb04-e8914c4f57d4",
+            "pin": "aa3df9df-f618-49c4-bbe4-36d4757a60ba"
+        },
+        "4c03f503-10f0-4553-9cef-335629f15626": {
+            "gate": "d0030b61-eea7-40e5-bb04-e8914c4f57d4",
+            "pin": "3db7fe02-604e-4960-b2b1-0578f4782512"
+        },
+        "542ac8cb-46c6-4484-8e25-2445f2bb8eb6": {
+            "gate": "d0030b61-eea7-40e5-bb04-e8914c4f57d4",
+            "pin": "38db3294-dfc3-430b-92a1-2a1187c442ab"
+        },
+        "5b174daa-2285-4aa4-93fd-9e816ec9c7c1": {
+            "gate": "d0030b61-eea7-40e5-bb04-e8914c4f57d4",
+            "pin": "c4b28d29-3d36-426c-9e96-e3c874a781ac"
+        },
+        "7dfd0f50-bc31-419d-90a3-3abcc2fb69e1": {
+            "gate": "d0030b61-eea7-40e5-bb04-e8914c4f57d4",
+            "pin": "1cca2e10-ef16-4885-9ecc-9ee7fdbb7a4a"
+        },
+        "9d243da2-6d77-437a-8b39-e4d1822deded": {
+            "gate": "d0030b61-eea7-40e5-bb04-e8914c4f57d4",
+            "pin": "4c3f7b77-060a-4cc8-9589-5b33c9d3b678"
+        },
+        "bf324305-c6af-440c-908a-c3ef13f9fe0a": {
+            "gate": "d0030b61-eea7-40e5-bb04-e8914c4f57d4",
+            "pin": "7222169d-2694-4b74-ae22-5ad906606f99"
+        },
+        "da08bfd0-6ace-46a2-8d71-1948fed4c86c": {
+            "gate": "d0030b61-eea7-40e5-bb04-e8914c4f57d4",
+            "pin": "63a2f649-839c-488c-8d87-bfae6388ef1a"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "connector",
+        "header",
+        "th"
+    ],
+    "type": "part",
+    "uuid": "eb6d204a-a07b-4c98-bd54-8823f5776384",
+    "value": [
+        false,
+        ""
+    ]
+}

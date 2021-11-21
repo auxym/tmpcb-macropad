@@ -1,0 +1,38 @@
+{
+    "manufacturer": "Bourns",
+    "name": "PEC12R-3225F-S0024",
+    "pins": {
+        "1ad59d49-b219-41c1-a243-d7298f6e4e71": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "S2",
+            "swap_group": 0
+        },
+        "2a76a59c-893c-418f-9b1d-1d6aa10b34b8": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "C",
+            "swap_group": 0
+        },
+        "6e07117a-20f3-4d66-a2cb-e5baedb45d25": {
+            "direction": "output",
+            "names": [],
+            "primary_name": "A",
+            "swap_group": 0
+        },
+        "7f8e822a-9c60-4912-abcd-614161032ed0": {
+            "direction": "output",
+            "names": [],
+            "primary_name": "B",
+            "swap_group": 0
+        },
+        "d33f5613-e8c7-4ec6-a048-5b0280076cf7": {
+            "direction": "passive",
+            "names": [],
+            "primary_name": "S1",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "ee58cc48-986f-4bb2-8f73-5df2daa99822"
+}

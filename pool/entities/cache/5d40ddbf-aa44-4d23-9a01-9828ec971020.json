@@ -1,0 +1,16 @@
+{
+    "gates": {
+        "b298aee0-a515-48c9-85cf-0c57496cc649": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "e5b71d3f-4d58-4193-a1bd-ab549b0de1fe"
+        }
+    },
+    "manufacturer": "Vishay",
+    "name": "VEML7700-TR",
+    "prefix": "U",
+    "tags": [],
+    "type": "entity",
+    "uuid": "5d40ddbf-aa44-4d23-9a01-9828ec971020"
+}

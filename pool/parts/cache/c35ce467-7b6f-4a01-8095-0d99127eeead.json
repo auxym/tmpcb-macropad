@@ -1,0 +1,53 @@
+{
+    "MPN": [
+        false,
+        "PEC12R-3225F-S0024"
+    ],
+    "datasheet": [
+        false,
+        "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf"
+    ],
+    "description": [
+        false,
+        "Rotary encoder 24 PPR with push button"
+    ],
+    "entity": "0985bd20-e2b7-44d0-b119-07bc1d793b6c",
+    "inherit_model": true,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Bourns"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "df998e1c-17a9-48d0-82cd-f5700b472c1d",
+    "pad_map": {
+        "0b88ad0b-b041-40ae-8304-36887bf6fd3f": {
+            "gate": "43e42349-1a0c-4bdb-a23e-16c3bf201131",
+            "pin": "1ad59d49-b219-41c1-a243-d7298f6e4e71"
+        },
+        "2a0fea13-ff66-4a24-ba80-91f71d67d825": {
+            "gate": "43e42349-1a0c-4bdb-a23e-16c3bf201131",
+            "pin": "d33f5613-e8c7-4ec6-a048-5b0280076cf7"
+        },
+        "86f69c62-baa8-4ad3-a4b4-a5efe2ba9809": {
+            "gate": "43e42349-1a0c-4bdb-a23e-16c3bf201131",
+            "pin": "7f8e822a-9c60-4912-abcd-614161032ed0"
+        },
+        "ddac4f37-72e3-46a9-80f0-4aac94733b89": {
+            "gate": "43e42349-1a0c-4bdb-a23e-16c3bf201131",
+            "pin": "2a76a59c-893c-418f-9b1d-1d6aa10b34b8"
+        },
+        "f4528c3d-4a6f-47d9-9190-fe84dc73fd43": {
+            "gate": "43e42349-1a0c-4bdb-a23e-16c3bf201131",
+            "pin": "6e07117a-20f3-4d66-a2cb-e5baedb45d25"
+        }
+    },
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "c35ce467-7b6f-4a01-8095-0d99127eeead",
+    "value": [
+        false,
+        ""
+    ]
+}

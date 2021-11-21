@@ -1,0 +1,18 @@
+{
+    "gates": {
+        "43e42349-1a0c-4bdb-a23e-16c3bf201131": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "ee58cc48-986f-4bb2-8f73-5df2daa99822"
+        }
+    },
+    "manufacturer": "Bourns",
+    "name": "PEC12R-3225F-S0024",
+    "prefix": "RE",
+    "tags": [
+        "encoder"
+    ],
+    "type": "entity",
+    "uuid": "0985bd20-e2b7-44d0-b119-07bc1d793b6c"
+}

@@ -1,0 +1,32 @@
+{
+    "manufacturer": "Vishay",
+    "name": "VEML7700-TR",
+    "pins": {
+        "74912788-ab3e-4cb8-919e-29648e1f6022": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "SDA",
+            "swap_group": 0
+        },
+        "8d3ad678-0719-4b43-a5a5-7d538f695959": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "SCL",
+            "swap_group": 0
+        },
+        "af320d54-2cbd-40a0-90d9-4abc02a35cac": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VDD",
+            "swap_group": 0
+        },
+        "c822d5c9-79e6-4b6a-96fe-8d0109324d7f": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "GND",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "e5b71d3f-4d58-4193-a1bd-ab549b0de1fe"
+}

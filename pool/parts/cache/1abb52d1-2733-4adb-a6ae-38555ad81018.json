@@ -1,0 +1,53 @@
+{
+    "MPN": [
+        false,
+        "IN-PI55QATPRPGPBPW-30"
+    ],
+    "datasheet": [
+        false,
+        "http://www.inolux-corp.com/datasheet/SMDLED/Addressable%20LED/IN-PI55QATPRPGPBPW-XX_v1.3.pdf"
+    ],
+    "description": [
+        false,
+        "RGBW LED with integrated controller"
+    ],
+    "entity": "6d85b5e7-7b67-400b-9943-7be7e85629cf",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Inolux"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "03bd0e4b-df01-45ca-96c7-55071f67f67e",
+    "pad_map": {
+        "44b56669-62c8-4eee-b61a-218d4fbb8202": {
+            "gate": "79a5fea5-ea4b-47ac-a841-2b62d92ea338",
+            "pin": "03342812-eb97-4332-9a74-e47698ff658d"
+        },
+        "78c691b6-28f3-4145-95bb-e5436a4e48d8": {
+            "gate": "79a5fea5-ea4b-47ac-a841-2b62d92ea338",
+            "pin": "65485741-8197-405c-b3ed-18175fd7cb64"
+        },
+        "7c14e396-0135-463d-ab56-9aa7e40023d2": {
+            "gate": "79a5fea5-ea4b-47ac-a841-2b62d92ea338",
+            "pin": "d073ad09-bbad-4f53-a2cd-da7dcf254913"
+        },
+        "fe43b9d3-696e-4bae-9d64-916b248ddce3": {
+            "gate": "79a5fea5-ea4b-47ac-a841-2b62d92ea338",
+            "pin": "ea0aa827-e39d-423b-8ed3-f7ba9d780bf2"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "led",
+        "rgb",
+        "smd"
+    ],
+    "type": "part",
+    "uuid": "1abb52d1-2733-4adb-a6ae-38555ad81018",
+    "value": [
+        false,
+        "IN-PI55"
+    ]
+}

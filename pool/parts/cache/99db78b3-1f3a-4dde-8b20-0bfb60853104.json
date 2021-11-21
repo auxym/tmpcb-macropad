@@ -1,0 +1,55 @@
+{
+    "MPN": [
+        false,
+        "VEML7700-TR"
+    ],
+    "datasheet": [
+        false,
+        ""
+    ],
+    "description": [
+        false,
+        ""
+    ],
+    "entity": "5d40ddbf-aa44-4d23-9a01-9828ec971020",
+    "inherit_model": true,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Vishay"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "42a5db9d-9ff4-46b2-907d-c928ab212d19",
+    "pad_map": {
+        "6a002cf6-1318-40b3-8da1-1c3d87d03baa": {
+            "gate": "b298aee0-a515-48c9-85cf-0c57496cc649",
+            "pin": "74912788-ab3e-4cb8-919e-29648e1f6022"
+        },
+        "95bbc846-58dd-4625-8886-4e2c8ed1b888": {
+            "gate": "b298aee0-a515-48c9-85cf-0c57496cc649",
+            "pin": "8d3ad678-0719-4b43-a5a5-7d538f695959"
+        },
+        "b02a1550-26fb-4432-8786-84fe3bd580c4": {
+            "gate": "b298aee0-a515-48c9-85cf-0c57496cc649",
+            "pin": "af320d54-2cbd-40a0-90d9-4abc02a35cac"
+        },
+        "be692584-5381-4a8e-a1c6-677db2458993": {
+            "gate": "b298aee0-a515-48c9-85cf-0c57496cc649",
+            "pin": "c822d5c9-79e6-4b6a-96fe-8d0109324d7f"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "i2c",
+        "light",
+        "optical",
+        "sensor",
+        "smd"
+    ],
+    "type": "part",
+    "uuid": "99db78b3-1f3a-4dde-8b20-0bfb60853104",
+    "value": [
+        false,
+        ""
+    ]
+}

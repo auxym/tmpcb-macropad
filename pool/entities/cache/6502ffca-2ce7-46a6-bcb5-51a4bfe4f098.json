@@ -1,0 +1,18 @@
+{
+    "gates": {
+        "d59fb023-2639-4f98-8106-ffc83bdcda06": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "a16798c5-ad01-4c73-aef6-0012848cb775"
+        }
+    },
+    "manufacturer": "Raspberry Pi",
+    "name": "SC0915",
+    "prefix": "U",
+    "tags": [
+        "mcu"
+    ],
+    "type": "entity",
+    "uuid": "6502ffca-2ce7-46a6-bcb5-51a4bfe4f098"
+}

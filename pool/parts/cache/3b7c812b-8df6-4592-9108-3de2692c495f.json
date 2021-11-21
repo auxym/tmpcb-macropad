@@ -1,0 +1,57 @@
+{
+    "MPN": [
+        false,
+        "PI4ULS5V201"
+    ],
+    "datasheet": [
+        false,
+        "https://www.diodes.com/assets/Datasheets/PI4ULS5V201.pdf"
+    ],
+    "description": [
+        false,
+        "1-Bit Bi-directional Level Shifter"
+    ],
+    "entity": "0be56b79-a6fa-46c8-9905-20bf60e21786",
+    "inherit_model": true,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Diodes Inc."
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "db48b860-9206-4222-b531-dea96399c70b",
+    "pad_map": {
+        "40a9f890-5335-4ead-bd4a-d1dba2de41ae": {
+            "gate": "e2472980-f065-4c41-bae8-c8d44d45e2b7",
+            "pin": "7ecdf041-7fce-47e8-96b9-0a2f35729e4a"
+        },
+        "531c3759-a1b6-40c6-9474-5554dc94bcec": {
+            "gate": "e2472980-f065-4c41-bae8-c8d44d45e2b7",
+            "pin": "4056b3e2-e68f-42c5-9414-a7fa7cde2a9a"
+        },
+        "9fe9b6c3-f887-4523-976a-6aa050235658": {
+            "gate": "e2472980-f065-4c41-bae8-c8d44d45e2b7",
+            "pin": "2690fc1b-8996-4844-aba4-b5dfbe08a2e9"
+        },
+        "bb9bbbd8-9aa2-49aa-98fd-b508ded56028": {
+            "gate": "e2472980-f065-4c41-bae8-c8d44d45e2b7",
+            "pin": "8e12961c-950e-4411-a6da-a56674c8de33"
+        },
+        "be802fd1-5220-4258-a11f-c1529e6187e0": {
+            "gate": "e2472980-f065-4c41-bae8-c8d44d45e2b7",
+            "pin": "fa5ef614-8989-4f67-86c0-74165304a2e8"
+        },
+        "f827f54d-8a25-45ce-a5c6-aa1cdc05418a": {
+            "gate": "e2472980-f065-4c41-bae8-c8d44d45e2b7",
+            "pin": "8cacc0b9-7a46-4edd-a8de-c3363b9420a0"
+        }
+    },
+    "parametric": {},
+    "tags": [],
+    "type": "part",
+    "uuid": "3b7c812b-8df6-4592-9108-3de2692c495f",
+    "value": [
+        false,
+        ""
+    ]
+}

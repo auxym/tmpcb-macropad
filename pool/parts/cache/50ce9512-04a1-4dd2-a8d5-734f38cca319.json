@@ -1,0 +1,45 @@
+{
+    "MPN": [
+        false,
+        "MX1A-11NW"
+    ],
+    "datasheet": [
+        false,
+        "https://media.digikey.com/PDF/Data%20Sheets/Cherry%20PDFs/MX%20Series.pdf"
+    ],
+    "description": [
+        false,
+        "Keyswitch Standard force, linear, PCB mount"
+    ],
+    "entity": "09952b1f-1221-48ad-896c-4481914e3af2",
+    "inherit_model": false,
+    "inherit_tags": false,
+    "manufacturer": [
+        false,
+        "Cherry"
+    ],
+    "model": "00000000-0000-0000-0000-000000000000",
+    "package": "5a4cfc3e-face-403e-9f9e-cd72b26162cc",
+    "pad_map": {
+        "4d6b0aaf-b065-4f05-92cd-41a51c6ed7c7": {
+            "gate": "1926ff13-c95b-49f9-937c-35ac08ba9efb",
+            "pin": "831b482b-82af-40ba-8cc0-5e272f25cc2c"
+        },
+        "d6581f78-b3b8-4047-af4b-a3e6f64302df": {
+            "gate": "1926ff13-c95b-49f9-937c-35ac08ba9efb",
+            "pin": "97955848-10f4-4667-b838-46f6bb8fe085"
+        }
+    },
+    "parametric": {},
+    "tags": [
+        "momentary",
+        "spst",
+        "switch"
+    ],
+    "type": "part",
+    "uuid": "50ce9512-04a1-4dd2-a8d5-734f38cca319",
+    "value": [
+        false,
+        ""
+    ]
+}

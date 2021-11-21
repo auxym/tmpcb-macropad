@@ -1,0 +1,21 @@
+{
+    "gates": {
+        "e2472980-f065-4c41-bae8-c8d44d45e2b7": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "9040d604-3d97-4a70-8a01-4002dd50d00f"
+        }
+    },
+    "manufacturer": "Diodes Inc.",
+    "name": "PI4ULS5V201",
+    "prefix": "U",
+    "tags": [
+        "buffer",
+        "ic",
+        "shifter",
+        "translator"
+    ],
+    "type": "entity",
+    "uuid": "0be56b79-a6fa-46c8-9905-20bf60e21786"
+}

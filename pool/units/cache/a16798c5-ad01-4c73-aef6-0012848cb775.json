@@ -1,0 +1,335 @@
+{
+    "manufacturer": "Raspberry Pi",
+    "name": "SC0915 ",
+    "pins": {
+        "035c385a-c324-4318-90e8-dca1575e237e": {
+            "direction": "bidirectional",
+            "names": [
+                "SPI0",
+                "RX,I2C0",
+                "SDA,",
+                "UART0",
+                "RX"
+            ],
+            "primary_name": "GP16",
+            "swap_group": 0
+        },
+        "090057e2-30d2-4605-bcb7-01e769fb2bff": {
+            "direction": "bidirectional",
+            "names": [
+                "I2C1",
+                "SDA,SPI0",
+                "SCK"
+            ],
+            "primary_name": "GP2",
+            "swap_group": 0
+        },
+        "09e3759a-1b6d-44af-a49e-1a982cf17f90": {
+            "direction": "bidirectional",
+            "names": [
+                "I2C1",
+                "SCL,",
+                "SPI0",
+                "TX"
+            ],
+            "primary_name": "GP3",
+            "swap_group": 0
+        },
+        "147a272e-a9b4-429d-afd9-91a3ae701497": {
+            "direction": "bidirectional",
+            "names": [
+                "UART1",
+                "TX,I2C0",
+                "SDA,SPI0",
+                "RX"
+            ],
+            "primary_name": "GP4",
+            "swap_group": 0
+        },
+        "19812f4b-a84c-4a85-8ad1-040fe7ba1b20": {
+            "direction": "bidirectional",
+            "names": [
+                "I2C0",
+                "SCL"
+            ],
+            "primary_name": "GP21",
+            "swap_group": 0
+        },
+        "1a21cdf8-e2fc-4fe5-bf41-b27e1b83459d": {
+            "direction": "bidirectional",
+            "names": [
+                "SPI0",
+                "SCK,I2C1",
+                "SDA"
+            ],
+            "primary_name": "GP18",
+            "swap_group": 0
+        },
+        "1b01b7bc-b0ca-4c9e-8248-d1cc98461f82": {
+            "direction": "bidirectional",
+            "names": [
+                "I2C1",
+                "SCL,",
+                "SPI0",
+                "TX"
+            ],
+            "primary_name": "GP7",
+            "swap_group": 0
+        },
+        "22c28ba3-f982-4b38-968f-e7330739895c": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "ADC_VREF",
+            "swap_group": 0
+        },
+        "2ae4a0fd-0a53-4309-b2ba-9444aa105422": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VBUS",
+            "swap_group": 0
+        },
+        "2f7ec640-cf16-47fb-aac3-879b9755f61a": {
+            "direction": "bidirectional",
+            "names": [
+                "I2C1",
+                "SDA,",
+                "SPI0",
+                "SCK"
+            ],
+            "primary_name": "GP6",
+            "swap_group": 0
+        },
+        "413ae941-47c5-4c36-ad3c-82c292e48c8a": {
+            "direction": "bidirectional",
+            "names": [
+                "ADC1,I2C1",
+                "SCL"
+            ],
+            "primary_name": "GP27",
+            "swap_group": 0
+        },
+        "42d8b2b7-e5f9-45e6-9340-22c63afee01b": {
+            "direction": "bidirectional",
+            "names": [
+                "UART1",
+                "RX,",
+                "I2C0",
+                "SCL,",
+                "SPI0",
+                "CSn"
+            ],
+            "primary_name": "GP5",
+            "swap_group": 0
+        },
+        "5c4b692c-5682-4fb3-9fcc-9ab2897b2967": {
+            "direction": "bidirectional",
+            "names": [
+                "ADC0,I2C1",
+                "SDA"
+            ],
+            "primary_name": "GP26",
+            "swap_group": 0
+        },
+        "5dc87082-49c7-4069-b7fe-715673c6f27f": {
+            "direction": "bidirectional",
+            "names": [
+                "I2C0",
+                "SDA"
+            ],
+            "primary_name": "GP20",
+            "swap_group": 0
+        },
+        "600df4d5-5b71-4ad8-9b55-148d92b75d93": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "3V3_EN",
+            "swap_group": 0
+        },
+        "6b7bf0af-6892-4087-8b16-866e6d49d6ba": {
+            "direction": "bidirectional",
+            "names": [
+                "UART1",
+                "RX,I2C0",
+                "SCL,",
+                "SPI1",
+                "CSn"
+            ],
+            "primary_name": "GP9",
+            "swap_group": 0
+        },
+        "708b293b-1e0a-43e7-bd6b-bfdb40973596": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "SWDIO",
+            "swap_group": 0
+        },
+        "822bbe58-a460-4de7-a4b8-8a27e2a79c7d": {
+            "direction": "bidirectional",
+            "names": [
+                "UART0",
+                "TX,I2C0",
+                "SDA,SPI1",
+                "RX"
+            ],
+            "primary_name": "GP12",
+            "swap_group": 0
+        },
+        "88996607-3f1e-4954-9ab9-8c2d0eb335f3": {
+            "direction": "bidirectional",
+            "names": [
+                "SPI0",
+                "TX,",
+                "I2C1",
+                "SCL"
+            ],
+            "primary_name": "GP19",
+            "swap_group": 0
+        },
+        "8a961fb3-4ded-462d-a6b3-db06fc6356e3": {
+            "direction": "bidirectional",
+            "names": [
+                "ADC2"
+            ],
+            "primary_name": "GP28",
+            "swap_group": 0
+        },
+        "8b78e82b-43a4-4ea3-9c77-d93692ca89d4": {
+            "direction": "bidirectional",
+            "names": [
+                "I2C1",
+                "SDA,SPI1",
+                "SCK"
+            ],
+            "primary_name": "GP14",
+            "swap_group": 0
+        },
+        "9a203903-cdf4-40f1-8d3d-2532f15bde19": {
+            "direction": "bidirectional",
+            "names": [
+                "UART0",
+                "RX,I2C0",
+                "SCL,",
+                "SPI0",
+                "CSn"
+            ],
+            "primary_name": "GP1",
+            "swap_group": 0
+        },
+        "ae78d3a3-0ad5-4c48-b54b-20285f99db3e": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "GP22",
+            "swap_group": 0
+        },
+        "b41ffd95-3506-4611-9d74-8f704c78bcf9": {
+            "direction": "bidirectional",
+            "names": [
+                "I2C1",
+                "SCL,SPI1",
+                "TX"
+            ],
+            "primary_name": "GP15",
+            "swap_group": 0
+        },
+        "bc7b3fe0-d2bc-4f42-a560-091bde2911f7": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VSYS",
+            "swap_group": 0
+        },
+        "c4ab4ce2-2661-47c4-a326-acb7d73d8219": {
+            "direction": "power_output",
+            "names": [],
+            "primary_name": "3V3_OUT",
+            "swap_group": 0
+        },
+        "c5bc4278-8a38-4be8-b149-040a3265999e": {
+            "direction": "bidirectional",
+            "names": [
+                "I2C1",
+                "SDA,",
+                "SPI1",
+                "SCK"
+            ],
+            "primary_name": "GP10",
+            "swap_group": 0
+        },
+        "c91e6393-39e7-4084-b0e2-3bfeefcb16a8": {
+            "direction": "bidirectional",
+            "names": [
+                "UART0",
+                "RX,",
+                "I2C0",
+                "SCL,",
+                "SPI1",
+                "CSn"
+            ],
+            "primary_name": "GP13",
+            "swap_group": 0
+        },
+        "cb16d33a-0e9d-432f-8fb6-436a20784c2f": {
+            "direction": "power_output",
+            "names": [],
+            "primary_name": "GND",
+            "swap_group": 0
+        },
+        "d028a76a-0c89-467f-9520-3766ae85a087": {
+            "direction": "bidirectional",
+            "names": [
+                "UART1",
+                "TX,I2C0",
+                "SDA,SPI1",
+                "RX"
+            ],
+            "primary_name": "GP8",
+            "swap_group": 0
+        },
+        "eadfecf7-d0f9-4fa3-8d53-9df0cd85ee40": {
+            "direction": "bidirectional",
+            "names": [
+                "I2C1",
+                "SCL,",
+                "SPI1",
+                "TX"
+            ],
+            "primary_name": "GP11",
+            "swap_group": 0
+        },
+        "eaee62ed-3433-4b73-a981-124fd90ff447": {
+            "direction": "bidirectional",
+            "names": [
+                "SPI0",
+                "CSn,I2C0",
+                "SCL,UART0",
+                "RX"
+            ],
+            "primary_name": "GP17",
+            "swap_group": 0
+        },
+        "f97fadfa-e433-4f2c-9a0f-f207da8d329b": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "RUN",
+            "swap_group": 0
+        },
+        "fc4b7100-24f7-434a-a478-2185dc2da4a6": {
+            "direction": "output",
+            "names": [],
+            "primary_name": "SWDCLK",
+            "swap_group": 0
+        },
+        "ff5fefb1-72e8-4f40-a1f0-2cc1f07f439a": {
+            "direction": "bidirectional",
+            "names": [
+                "UART0",
+                "TX,I2C0",
+                "SDA,SPI0",
+                "RX"
+            ],
+            "primary_name": "GP0",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "a16798c5-ad01-4c73-aef6-0012848cb775"
+}

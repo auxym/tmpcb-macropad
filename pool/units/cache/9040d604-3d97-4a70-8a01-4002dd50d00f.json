@@ -1,0 +1,44 @@
+{
+    "manufacturer": "Diodes Inc.",
+    "name": "PI4ULS5V201",
+    "pins": {
+        "2690fc1b-8996-4844-aba4-b5dfbe08a2e9": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VCCB",
+            "swap_group": 0
+        },
+        "4056b3e2-e68f-42c5-9414-a7fa7cde2a9a": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "GND",
+            "swap_group": 0
+        },
+        "7ecdf041-7fce-47e8-96b9-0a2f35729e4a": {
+            "direction": "input",
+            "names": [],
+            "primary_name": "EN",
+            "swap_group": 0
+        },
+        "8cacc0b9-7a46-4edd-a8de-c3363b9420a0": {
+            "direction": "power_input",
+            "names": [],
+            "primary_name": "VCCA",
+            "swap_group": 0
+        },
+        "8e12961c-950e-4411-a6da-a56674c8de33": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "A",
+            "swap_group": 0
+        },
+        "fa5ef614-8989-4f67-86c0-74165304a2e8": {
+            "direction": "bidirectional",
+            "names": [],
+            "primary_name": "B",
+            "swap_group": 0
+        }
+    },
+    "type": "unit",
+    "uuid": "9040d604-3d97-4a70-8a01-4002dd50d00f"
+}

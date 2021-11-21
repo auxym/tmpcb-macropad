@@ -1,0 +1,19 @@
+{
+    "gates": {
+        "79a5fea5-ea4b-47ac-a841-2b62d92ea338": {
+            "name": "Main",
+            "suffix": "",
+            "swap_group": 0,
+            "unit": "2ffde499-4491-445a-b8de-8505dee203a6"
+        }
+    },
+    "manufacturer": "Worldsemi",
+    "name": "IN-PI55QATPRPGPBPW",
+    "prefix": "D",
+    "tags": [
+        "led",
+        "rgb"
+    ],
+    "type": "entity",
+    "uuid": "6d85b5e7-7b67-400b-9943-7be7e85629cf"
+}
