@@ -14,7 +14,7 @@
                 1000000,
                 1000000
             ],
-            "spacing_square": 500000
+            "spacing_square": 1000000
         },
         "grids": {}
     },
@@ -223,7 +223,7 @@
     },
     "tags": [],
     "texts": {
-        "af8bd7a6-c165-4246-a079-2e498879e16e": {
+        "d618526a-db4d-4956-b11a-7c810982dffd": {
             "font": "simplex",
             "from_smash": false,
             "layer": 20,
@@ -232,8 +232,8 @@
                 "angle": 0,
                 "mirror": false,
                 "shift": [
-                    -1500000,
-                    2500000
+                    -1000000,
+                    3000000
                 ]
             },
             "size": 1000000,
