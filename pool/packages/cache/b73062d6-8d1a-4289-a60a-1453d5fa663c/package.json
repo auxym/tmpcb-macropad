@@ -712,6 +712,22 @@
                 ]
             }
         },
+        "e77e1dc9-6133-4f98-b071-0286c275e917": {
+            "name": "44",
+            "padstack": "296cf69b-9d53-45e4-aaab-4aedf4087d3a",
+            "parameter_set": {
+                "hole_diameter": 600000,
+                "pad_diameter": 1200000
+            },
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    -2500000,
+                    12500000
+                ]
+            }
+        },
         "ed616c34-9fee-436c-98ed-a3ca1d02b1f1": {
             "name": "33",
             "padstack": "296cf69b-9d53-45e4-aaab-4aedf4087d3a",
@@ -793,8 +809,10 @@
             }
         }
     },
-    "parameter_program": "",
-    "parameter_set": {},
+    "parameter_program": "21.000mm 52.300mm\nget-parameter [ courtyard_expansion ]\n2 * +xy\nset-polygon [ courtyard rectangle 0.000mm 0.650mm ]",
+    "parameter_set": {
+        "courtyard_expansion": 250000
+    },
     "polygons": {
         "45b62fdc-9584-4383-bc50-d95528626387": {
             "layer": 40,
@@ -861,8 +879,8 @@
                     ],
                     "arc_reverse": false,
                     "position": [
-                        -10500000,
-                        -25500000
+                        -10750000,
+                        -25750000
                     ],
                     "type": "line"
                 },
@@ -873,8 +891,8 @@
                     ],
                     "arc_reverse": false,
                     "position": [
-                        -10500000,
-                        26800000
+                        -10750000,
+                        27050000
                     ],
                     "type": "line"
                 },
@@ -885,8 +903,8 @@
                     ],
                     "arc_reverse": false,
                     "position": [
-                        10500000,
-                        26800000
+                        10750000,
+                        27050000
                     ],
                     "type": "line"
                 },
@@ -897,8 +915,8 @@
                     ],
                     "arc_reverse": false,
                     "position": [
-                        10500000,
-                        -25500000
+                        10750000,
+                        -25750000
                     ],
                     "type": "line"
                 }
@@ -973,6 +991,23 @@
     },
     "tags": [],
     "texts": {
+        "bab39713-0a67-4981-8a97-a5903d8811e8": {
+            "font": "simplex",
+            "from_smash": false,
+            "layer": 20,
+            "origin": "center",
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    -1270000,
+                    12570000
+                ]
+            },
+            "size": 1000000,
+            "text": "TP6",
+            "width": 150000
+        },
         "ce70a28c-5c02-4f9f-a90c-6676f8114a89": {
             "font": "simplex",
             "from_smash": false,
@@ -982,11 +1017,11 @@
                 "angle": 0,
                 "mirror": false,
                 "shift": [
-                    -2540000,
-                    29210000
+                    -1270000,
+                    -26800000
                 ]
             },
-            "size": 1500000,
+            "size": 1000000,
             "text": "$RD",
             "width": 150000
         }

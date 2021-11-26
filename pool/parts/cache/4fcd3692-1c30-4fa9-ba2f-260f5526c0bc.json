@@ -173,6 +173,10 @@
             "gate": "d59fb023-2639-4f98-8106-ffc83bdcda06",
             "pin": "090057e2-30d2-4605-bcb7-01e769fb2bff"
         },
+        "e77e1dc9-6133-4f98-b071-0286c275e917": {
+            "gate": "d59fb023-2639-4f98-8106-ffc83bdcda06",
+            "pin": "a6084f97-5ca7-4851-997c-082ec90cacd6"
+        },
         "ed616c34-9fee-436c-98ed-a3ca1d02b1f1": {
             "gate": "d59fb023-2639-4f98-8106-ffc83bdcda06",
             "pin": "cb16d33a-0e9d-432f-8fb6-436a20784c2f"

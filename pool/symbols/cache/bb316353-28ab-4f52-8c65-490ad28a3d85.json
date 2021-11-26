@@ -1023,6 +1023,23 @@
                 42500000
             ]
         },
+        "a6084f97-5ca7-4851-997c-082ec90cacd6": {
+            "decoration": {
+                "clock": false,
+                "dot": false,
+                "driver": "default",
+                "schmitt": false
+            },
+            "length": 2500000,
+            "name_orientation": "in_line",
+            "name_visible": true,
+            "orientation": "right",
+            "pad_visible": true,
+            "position": [
+                27500000,
+                37500000
+            ]
+        },
         "ae78d3a3-0ad5-4c48-b54b-20285f99db3e": {
             "decoration": {
                 "clock": false,
@@ -1247,7 +1264,42 @@
     },
     "polygons": {},
     "text_placements": {},
-    "texts": {},
+    "texts": {
+        "57f403bf-c53d-4aba-aaa4-526982c3ca3c": {
+            "font": "simplex",
+            "from_smash": false,
+            "layer": 0,
+            "origin": "center",
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    -2500000,
+                    -46250000
+                ]
+            },
+            "size": 1500000,
+            "text": "$VALUE",
+            "width": 0
+        },
+        "613ea7da-d408-4f49-9589-1ffb245a7560": {
+            "font": "simplex",
+            "from_smash": false,
+            "layer": 0,
+            "origin": "center",
+            "placement": {
+                "angle": 0,
+                "mirror": false,
+                "shift": [
+                    -2500000,
+                    46250000
+                ]
+            },
+            "size": 1500000,
+            "text": "$REFDES",
+            "width": 0
+        }
+    },
     "type": "symbol",
     "unit": "a16798c5-ad01-4c73-aef6-0012848cb775",
     "uuid": "bb316353-28ab-4f52-8c65-490ad28a3d85"
