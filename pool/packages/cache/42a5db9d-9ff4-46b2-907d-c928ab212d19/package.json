@@ -98,19 +98,19 @@
             "from": "a2af2b2f-7504-42ef-9133-c8bdaa169f44",
             "layer": 20,
             "to": "4173c7d0-31cf-4a8e-a0ba-f1ffa4703842",
-            "width": 120000
+            "width": 150000
         },
         "8ebc901c-a13b-47ee-bd57-853c2f7140b2": {
             "from": "73c0deca-0229-42e7-8b02-146fef6af8fe",
             "layer": 20,
             "to": "aab6f52a-667b-4694-9f68-682b0bd3a65d",
-            "width": 120000
+            "width": 150000
         },
         "949db96d-6232-40f7-a96b-945c8e226c77": {
             "from": "aab6f52a-667b-4694-9f68-682b0bd3a65d",
             "layer": 20,
             "to": "a2af2b2f-7504-42ef-9133-c8bdaa169f44",
-            "width": 120000
+            "width": 150000
         },
         "a27285a5-251f-469f-8ca5-53a7a9af4d4b": {
             "from": "d1ec241a-74a0-40d4-acd2-9755f02278e3",
@@ -122,7 +122,7 @@
             "from": "4173c7d0-31cf-4a8e-a0ba-f1ffa4703842",
             "layer": 20,
             "to": "de976142-0426-49cd-a106-e26f113f901b",
-            "width": 120000
+            "width": 150000
         },
         "d3b5dc83-2e56-47ed-8ef1-21b022c9f6d5": {
             "from": "bce3a864-f6ca-419c-9c07-5a980993db0a",
@@ -134,7 +134,7 @@
             "from": "de976142-0426-49cd-a106-e26f113f901b",
             "layer": 20,
             "to": "cc50007d-5410-4abe-8c3b-37c5c00b467c",
-            "width": 120000
+            "width": 150000
         }
     },
     "manufacturer": "",
