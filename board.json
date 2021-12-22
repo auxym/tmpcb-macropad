@@ -19,7 +19,34 @@
         }
     },
     "connection_lines": {},
-    "dimensions": {},
+    "dimensions": {
+        "43ad1434-3cf6-4928-9378-974ee10f06eb": {
+            "label_distance": -14499999,
+            "label_size": 1500000,
+            "mode": "distance",
+            "p0": [
+                1999999,
+                0
+            ],
+            "p1": [
+                1999999,
+                -85500000
+            ]
+        },
+        "b98af14f-9df6-40e8-bc35-3d74030f522b": {
+            "label_distance": 13499999,
+            "label_size": 1500000,
+            "mode": "distance",
+            "p0": [
+                0,
+                -1999999
+            ],
+            "p1": [
+                100000000,
+                -1999999
+            ]
+        }
+    },
     "fab_output_settings": {
         "drill_mode": "merged",
         "drill_npth": "-npth.txt",
@@ -3612,21 +3639,21 @@
             },
             "100": {
                 "color": {
-                    "b": 0.0,
-                    "g": 0.0,
-                    "r": 0.0
+                    "b": 0.5299999713897705,
+                    "g": 0.5299999713897705,
+                    "r": 0.5299999713897705
                 },
-                "enabled": false,
+                "enabled": true,
                 "mode": "outline"
             },
             "10000": {
                 "color": {
-                    "b": 0.0,
-                    "g": 0.0,
-                    "r": 0.0
+                    "b": 0.8166666626930237,
+                    "g": 0.8166666626930237,
+                    "r": 0.8166666626930237
                 },
-                "enabled": false,
-                "mode": "outline"
+                "enabled": true,
+                "mode": "fill"
             },
             "110": {
                 "color": {
@@ -31463,15 +31490,15 @@
             "vertices": [
                 {
                     "arc_center": [
-                        0,
-                        0
+                        1999999,
+                        -1999999
                     ],
                     "arc_reverse": false,
                     "position": [
-                        0,
+                        1999999,
                         0
                     ],
-                    "type": "line"
+                    "type": "arc"
                 },
                 {
                     "arc_center": [
@@ -31481,9 +31508,45 @@
                     "arc_reverse": false,
                     "position": [
                         0,
+                        -1999999
+                    ],
+                    "type": "line"
+                },
+                {
+                    "arc_center": [
+                        1999999,
+                        -83500000
+                    ],
+                    "arc_reverse": false,
+                    "position": [
+                        0,
+                        -83500000
+                    ],
+                    "type": "arc"
+                },
+                {
+                    "arc_center": [
+                        0,
+                        0
+                    ],
+                    "arc_reverse": false,
+                    "position": [
+                        1999999,
                         -85500000
                     ],
                     "type": "line"
+                },
+                {
+                    "arc_center": [
+                        98000000,
+                        -83500000
+                    ],
+                    "arc_reverse": false,
+                    "position": [
+                        98000000,
+                        -85500000
+                    ],
+                    "type": "arc"
                 },
                 {
                     "arc_center": [
@@ -31493,9 +31556,21 @@
                     "arc_reverse": false,
                     "position": [
                         100000000,
-                        -85500000
+                        -83500000
                     ],
                     "type": "line"
+                },
+                {
+                    "arc_center": [
+                        98000000,
+                        -1999999
+                    ],
+                    "arc_reverse": false,
+                    "position": [
+                        100000000,
+                        -1999999
+                    ],
+                    "type": "arc"
                 },
                 {
                     "arc_center": [
@@ -31504,7 +31579,7 @@
                     ],
                     "arc_reverse": false,
                     "position": [
-                        100000000,
+                        98000000,
                         0
                     ],
                     "type": "line"
@@ -31706,36 +31781,6 @@
                         -1000000
                     ],
                     "type": "line"
-                }
-            ]
-        },
-        "f1467971-74e7-423b-87de-9b0d7de529b7": {
-            "layer": 110,
-            "parameter_class": "",
-            "vertices": [
-                {
-                    "arc_center": [
-                        0,
-                        0
-                    ],
-                    "arc_reverse": false,
-                    "position": [
-                        100000000,
-                        -3000000
-                    ],
-                    "type": "line"
-                },
-                {
-                    "arc_center": [
-                        97000000,
-                        -3000000
-                    ],
-                    "arc_reverse": true,
-                    "position": [
-                        100000000,
-                        -3000000
-                    ],
-                    "type": "arc"
                 }
             ]
         }
