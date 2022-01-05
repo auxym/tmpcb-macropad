@@ -1,6 +1,6 @@
-*.imp_meta
-*.autosave
-*.bak
-pool/*.db
-pool/*.db-*
+board/*.imp_meta
+board/*.autosave
+board/*.bak
+board/pool/*.db
+board/pool/*.db-*
 
