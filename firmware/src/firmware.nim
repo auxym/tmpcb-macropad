@@ -16,8 +16,20 @@ const SwitchTable: array[KeySwitch, Gpio] = [
 ]
 
 const KeyMapFKeys: array[KeySwitch, KeyboardKeypress] = [
-  1: keyF19, 2: keyF20, 3: keyF21, 4: keyF22, 5: keyF23, 6: keyF24 
+  1: keyF14, 2: keyF15, 3: keyF16, 4: keyF17, 5: keyF18, 6: keyF19 
 ]
+
+const
+  REnc1A = 19.Gpio
+  REnc1B = 20.Gpio
+  REnc1Switch = 18.Gpio
+  REnc2A = 13.Gpio
+  REnc2B = 14.Gpio
+  REnc2Switch = 15.Gpio
+
+type
+  REncChannel = enum chA, chB
+  REncState = array[REncChannel, Value]
 
 proc blinkLedTask(elapsed: TimestampMicros) =
   const blinkIntervalArr = [
@@ -53,8 +65,30 @@ proc hidKeysTask(elapsed: TimestampMicros) =
 
   if i > 0 or prevKeyCount > 0:
     discard hid.sendKeyboardReport(keyboardReportId, {}, keyPresses)
+    usbDeviceTask()
   prevKeyCount = i
 
+proc `$`(v: Value): string = $v.int
+
+proc encoderTask(elapsed: TimestampMicros) =
+  var
+    prevState {.global.}: REncState
+    isInit {.global.} = false
+  if not isInit:
+    prevState = [REnc1A.get(), REnc1B.get()]
+    isInit = true
+
+  let curState: REncState = [REnc1A.get(), REnc1B.get()]
+
+  if prevState[chA] == Low and curState[chA] == High:
+    let val = if curState[chB] == High: 1'i8 else: -1'i8
+    if hid.ready:
+      discard hid.sendMouseReport(
+        mouseReportId, buttons={}, x=0, y=0, horizontal=0, vertical=val
+      )
+    usbDeviceTask()
+
+  prevState = curState
 
 template schTask(task: proc(elapsed: TimestampMicros), rateHz: int): untyped =
   SchedulerEntry(period: 1_000_000 div rateHz, taskProc: task, elapsed: 0)
@@ -62,6 +96,7 @@ template schTask(task: proc(elapsed: TimestampMicros), rateHz: int): untyped =
 var SchedulerTable = [
   schTask(blinkLedTask, 100),
   schTask(hidKeysTask, 100),
+  schTask(encoderTask, 400),
 ]
 
 proc setup() =
@@ -76,11 +111,18 @@ proc setup() =
     ksw.init()
     ksw.disablePulls()
 
+  for pin in [REnc1A, REnc1B, REnc1Switch, REnc2A, REnc2B, REnc2Switch]:
+    pin.init()
+    pin.disablePulls()
+
   initInPi55Pio()
   setLedColor(1, 0x07100000.Grbw)
 
 proc main() =
-  var prevTime: TimestampMicros = 0
+  var
+    prevTime: TimestampMicros = 0
+    maxLoopTime: uint64
+    loopCount: int
   while true:
     usbDeviceTask()
 
@@ -93,6 +135,16 @@ proc main() =
         entry.elapsed = 0
       entry.elapsed = entry.elapsed + dt
     prevTime = now
+
+    # Main loop profiling
+    when false:
+      let mainLoopElapsed = timeUs64() - now
+      maxLoopTime = max(maxLoopTime, mainLoopElapsed)
+      loopCount.inc
+      if loopCount == 100_000:
+        usbser.writeLine("Loop: " & $maxLoopTime & " us")
+        loopCount = 0
+        maxLoopTime = 0
 
 setup()
 main()
