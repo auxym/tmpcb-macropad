@@ -16,7 +16,7 @@ const SwitchTable: array[KeySwitch, Gpio] = [
 ]
 
 const KeyMapFKeys: array[KeySwitch, KeyboardKeypress] = [
-  1: keyF14, 2: keyF15, 3: keyF16, 4: keyF17, 5: keyF18, 6: keyF19 
+  1: keyF14, 2: keyF15, 3: keyF16, 4: keyF17, 5: keyF18, 6: keyF19
 ]
 
 const
@@ -57,7 +57,7 @@ proc hidKeysTask(elapsed: TimestampMicros) =
     prevKeyCount {.global.}: Natural
     i = 0
     keyPresses: array[6, KeyboardKeypress]
-  
+
   for (idx, pin) in SwitchTable.pairs:
     if pin.get == Low:
       keyPresses[i] = KeyMapFKeys[idx]
@@ -90,6 +90,15 @@ proc encoderTask(elapsed: TimestampMicros) =
 
   prevState = curState
 
+proc rgbTask(elapsed: TimestampMicros) =
+  var remain {.global.}: TimestampMicros
+
+  if remain > elapsed:
+    remain = remain - elapsed
+  else:
+    remain = 40_000
+    nextRainbowColor()
+
 template schTask(task: proc(elapsed: TimestampMicros), rateHz: int): untyped =
   SchedulerEntry(period: 1_000_000 div rateHz, taskProc: task, elapsed: 0)
 
@@ -97,6 +106,7 @@ var SchedulerTable = [
   schTask(blinkLedTask, 100),
   schTask(hidKeysTask, 100),
   schTask(encoderTask, 400),
+  schTask(rgbTask, 100),
 ]
 
 proc setup() =
@@ -106,7 +116,7 @@ proc setup() =
 
   DefaultLedPin.init()
   DefaultLedPin.setDir(Out)
-  
+
   for ksw in SwitchTable:
     ksw.init()
     ksw.disablePulls()
@@ -116,7 +126,6 @@ proc setup() =
     pin.disablePulls()
 
   initInPi55Pio()
-  setLedColor(1, 0x07100000.Grbw)
 
 proc main() =
   var
