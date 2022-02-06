@@ -1,6 +1,7 @@
 import picostdlib/[gpio, time, tusb]
 import usb
 import inpi55
+import veml7700
 
 type TimestampMicros = uint64
 
@@ -99,6 +100,10 @@ proc rgbTask(elapsed: TimestampMicros) =
     remain = 40_000
     nextRainbowColor()
 
+proc vemlTask(elapsed: TimestampMicros) =
+  let val = vemlRead()
+  usbser.writeLine("VEML: " & $val)
+
 template schTask(task: proc(elapsed: TimestampMicros), rateHz: int): untyped =
   SchedulerEntry(period: 1_000_000 div rateHz, taskProc: task, elapsed: 0)
 
@@ -107,6 +112,7 @@ var SchedulerTable = [
   schTask(hidKeysTask, 100),
   schTask(encoderTask, 400),
   schTask(rgbTask, 100),
+  schTask(vemlTask, 2),
 ]
 
 proc setup() =
@@ -126,6 +132,8 @@ proc setup() =
     pin.disablePulls()
 
   initInPi55Pio()
+  initVeml()
+  vemlConfig(Sensitivity.s1x, IntegrationTime.ms200, 0, false, false)
 
 proc main() =
   var
