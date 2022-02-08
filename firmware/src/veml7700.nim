@@ -2,7 +2,7 @@ import picostdlib/[gpio, i2c]
 var vemli2c = i2c0
 
 const
-  VemlAddress = 0x10'u8
+  VemlAddress = 0x10.I2cAddress
 
 type IntegrationTime* {.pure.} = enum
   ms100 = 0b0000,
@@ -18,12 +18,12 @@ type Sensitivity* {.pure.} = enum
   div8 = 2,
   div4 = 3
 
-proc vemlWrite(command: 0'u8..6'u8, data: uint16, noStop: bool) =
+proc vemlWrite(command: 0'u8..6'u8, data: uint16) =
   var d: array[3, uint8]
   d[0] = command
   d[1] = data.uint8
   d[2] = (data shr 8).uint8
-  vemli2c.writeBlocking(VemlAddress, d[0].addr, d.len.uint, noStop=noStop)
+  vemli2c.writeBlocking(VemlAddress, d)
 
 proc vemlConfig*(
     sensitivity: Sensitivity,
@@ -38,7 +38,7 @@ proc vemlConfig*(
   val = val or (persist.uint16 shl 4)
   val = val or (enableInterrupt.uint16 shl 1)
   val = val or (shutDown.uint16)
-  vemlWrite(0, val, false)
+  vemlWrite(0, val)
 
 proc initVeml*() =
   # Fix hw bug, these pins are wrongly wired
@@ -49,13 +49,10 @@ proc initVeml*() =
   setupI2c(vemli2c, psda=16.Gpio, pscl=17.Gpio, freq=100_000, pull=false)
 
 proc vemlRead*(): uint16 =
-  var
-    cmd = 4
-    data: array[2, uint8]
+  const readCmd = [4'u8]
 
-  vemli2c.writeBlocking(VemlAddress, cmd.addr, 1, noStop=true)
-  discard vemli2c.readBlocking(
-    VemlAddress, dest=data[0].addr, size=data.len.uint, noStop=false
-  )
-  result = data[0]
-  result = result or data[1].uint16 shl 8
+  vemli2c.writeBlocking(VemlAddress, readCmd, noStop=true)
+  let data = vemli2c.readBlocking(VemlAddress, 2)
+  if data.len == 2:
+    result = data[0]
+    result = result or (data[1].uint16 shl 8)
