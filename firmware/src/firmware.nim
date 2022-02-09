@@ -57,15 +57,15 @@ proc hidKeysTask(elapsed: TimestampMicros) =
   var
     prevKeyCount {.global.}: Natural
     i = 0
-    keyPresses: array[6, KeyboardKeypress]
+    report: KeyboardReport
 
   for (idx, pin) in SwitchTable.pairs:
     if pin.get == Low:
-      keyPresses[i] = KeyMapFKeys[idx]
+      report.keycode[i] = KeyMapFKeys[idx]
       inc i
 
   if i > 0 or prevKeyCount > 0:
-    discard hid.sendKeyboardReport(keyboardReportId, {}, keyPresses)
+    discard hid.sendKeyboardReport(keyboardReportId, report)
     usbDeviceTask()
   prevKeyCount = i
 
@@ -75,6 +75,7 @@ proc encoderTask(elapsed: TimestampMicros) =
   var
     prevState {.global.}: REncState
     isInit {.global.} = false
+    report: MouseReport
   if not isInit:
     prevState = [REnc1A.get(), REnc1B.get()]
     isInit = true
@@ -82,12 +83,10 @@ proc encoderTask(elapsed: TimestampMicros) =
   let curState: REncState = [REnc1A.get(), REnc1B.get()]
 
   if prevState[chA] == Low and curState[chA] == High:
-    let val = if curState[chB] == High: 1'i8 else: -1'i8
+    report.wheel = if curState[chB] == High: 1'i8 else: -1'i8
     if hid.ready:
-      discard hid.sendMouseReport(
-        mouseReportId, buttons={}, x=0, y=0, horizontal=0, vertical=val
-      )
-    usbDeviceTask()
+      discard hid.sendMouseReport(mouseReportId, report)
+      usbDeviceTask()
 
   prevState = curState
 
