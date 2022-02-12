@@ -11,7 +11,7 @@ Install the following by following their respective instructions:
 Install the [picostdlib](https://github.com/beef331/picostdlib) library, which
 provides Nim bindings to pico-sdk:
 
-`nimble install https://github.com/beef331/picostdlib`
+`nimble install -d`
 
 Prepare the project for building against the pico-sdk installation (replace
 the path with your clone of pico-sdk):
