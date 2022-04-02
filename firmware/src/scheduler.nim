@@ -32,9 +32,10 @@ type
     timers: HeapQueue[Timer] # TODO: custom fixed-size heap?
 
   EventQueue[T] = object
+    task: TaskId
     events: seq[T]
     deferredEvents: seq[T]
-    task: TaskId
+    head, tail, len: int
 
 const
   InvalidTask  = TaskId(-1)
@@ -114,3 +115,30 @@ proc runScheduler*() =
     checkTimers()
     runNextTask()
 
+template cap(q: EventQueue): int = q.events.len
+
+proc push*[T](q: EventQueue[T], e: T) =
+  if q.len >= q.cap:
+    # Queue is full. Panic? Block?
+    # For now just drop the event
+    return
+
+  # Push at tail, pop from head
+  q.events[q.tail] = e
+  q.tail = (q.tail + 1) mod q.cap
+  q.len.inc
+
+  if q.len == 1:
+    sch.signal(q.task)
+
+proc pop*[T](q: EventQueue[T]): T =
+  if q.len <= 0:
+    raise newException(RangeDefect, "Queue is empty")
+
+  # Push at tail, pop from head
+  result = q.events[q.head]
+  q.head = (q.head + 1) mod q.cap
+  q.len.dec
+
+  if q.len == 0:
+    sch.wait(q.task)
